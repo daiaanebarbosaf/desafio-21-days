@@ -1,8 +1,11 @@
+body {
+  max-height: 100vh;
+}
 h1 {
   font-family: 'Roboto', sans-serif;
 
   font-size: 4rem;
   text-align: center;
 
-  margin: 0 auto;
+  margin-top: 15rem;
 }
