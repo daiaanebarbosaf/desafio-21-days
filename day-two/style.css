@@ -23,5 +23,13 @@ p {
 }
 
 a{
-  
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  color: blue;
+}
+
+img {
+  height: 2rem;
+  margin-left: 14rem;
 }
