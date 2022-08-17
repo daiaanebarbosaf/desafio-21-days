@@ -1,10 +1,9 @@
 body {
-  font-family: 'Permanent Marker', cursive;
   max-height: 100vh;
 }
 
 h1 {
-
+  font-family: 'Permanent Marker', cursive;
   font-size: 4rem;
   text-align: center;
 
@@ -18,5 +17,11 @@ h1:hover{
 }
 
 p {
+  font-family: 'Permanent Marker', cursive;
   text-align: center;
+  justify-content: center;
+}
+
+a{
+  
 }
