@@ -31,5 +31,10 @@ a{
 
 img {
   height: 2rem;
-  margin-left: 14rem;
+  text-align: center;
+
+  display: block;
+  margin: 0px auto;
+  margin-bottom: 1rem;
+
 }
