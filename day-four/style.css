@@ -12,3 +12,7 @@ h1:hover{
   transition: transform 300ms;
   transform: translateY(0);
 }
+
+.calculator__keyboard{
+  display: grid;
+}
