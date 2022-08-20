@@ -64,3 +64,33 @@ a {
   border: 1px solid rgba(130, 15, 147, 0.28);
 
 }
+
+.languages {
+  padding: 2rem;
+  text-align: center;
+  /*-webkit-transform: rotate(-5deg);*/
+
+  width: 1rem;
+
+  background: rgba(57, 37, 73, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(107, 15, 84, 0.171);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border: 1px solid rgba(130, 15, 147, 0.2)
+}
+
+.l1 {
+  margin-top: -19rem;
+  margin-left: 1rem;
+}
+
+.l2 {
+  margin-top: -2rem;
+  margin-left: 1rem;
+}
+
+.l3 {
+  margin-top: -2rem;
+  margin-left: 1rem;
+}
