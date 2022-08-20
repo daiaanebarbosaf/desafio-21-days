@@ -53,6 +53,7 @@ a {
   text-decoration: none;
 }
 
+
 .container {
   /*border: solid 1px rebeccapurple;*/
 
@@ -75,6 +76,7 @@ a {
 
   width: 1rem;
 
+  color: var(--text-color);
   background: rgba(171, 143, 223, 0.34);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -82,10 +84,12 @@ a {
   -webkit-backdrop-filter: blur(1.6px);
   border: 1px solid rgba(171, 143, 223, 0.93);
 
-  animation: go-back 2s infinite alternate;
+  animation: go-back 5s infinite alternate;
 }
 
 .l1 {
+  display: flex;
+  align-items: center;
   text-align: center;
   margin-top: -5rem;
   margin-left: 1rem;
@@ -104,7 +108,7 @@ a {
 
 @keyframes go-back {
   from {
-    transform: translateX(100px);
+    transform: translateX(200px);
   }
   to {
     transform: translateX(0);
