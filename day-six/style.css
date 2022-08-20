@@ -48,3 +48,8 @@ h1 {
 a {
   text-decoration: none;
 }
+
+div {
+  border: solid 1px rebeccapurple;
+  padding: 1rem;
+}
