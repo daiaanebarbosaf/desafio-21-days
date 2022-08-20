@@ -82,7 +82,7 @@ a {
   -webkit-backdrop-filter: blur(1.6px);
   border: 1px solid rgba(171, 143, 223, 0.93);
 
-  animation: go-back 3s infinite alternate;
+  animation: go-back 2s infinite alternate;
 }
 
 .l1 {
