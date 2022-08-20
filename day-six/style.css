@@ -32,10 +32,9 @@ img.avatar:hover {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 2rem;
   color: var(--text-color);
   margin-top: 24px;
-  margin-bottom: 8px;
 }
 
 .username {
@@ -46,7 +45,8 @@ h1 {
 }
 
 p {
-  
+  margin-top: -1rem;
+  font-size: 0.8rem;
 }
 
 a {
@@ -56,7 +56,7 @@ a {
 .container {
   /*border: solid 1px rebeccapurple;*/
 
-  padding: 1rem;
+  padding: 2rem;
 
   /*-webkit-transform: rotate(-5deg);*/
 
@@ -71,22 +71,22 @@ a {
 
 .languages {
   padding: 2rem;
-  text-align: center;
   -webkit-transform: rotate(-4deg);
 
   width: 1rem;
 
-  background: rgba(57, 37, 73, 0.1);
+  background: rgba(171, 143, 223, 0.34);
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(107, 15, 84, 0.171);
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px);
-  border: 1px solid rgba(130, 15, 147, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.6px);
+  -webkit-backdrop-filter: blur(1.6px);
+  border: 1px solid rgba(171, 143, 223, 0.93);
 
   animation: go-back 3s infinite alternate;
 }
 
 .l1 {
+  text-align: center;
   margin-top: -5rem;
   margin-left: 1rem;
   
