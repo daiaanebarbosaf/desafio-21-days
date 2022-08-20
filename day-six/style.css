@@ -71,11 +71,11 @@ a {
 }
 
 .languages {
-  padding: 2rem;
+  height: 4rem;
+  width: 4rem;
   -webkit-transform: rotate(-4deg);
 
-  width: 1rem;
-
+  text-align: center;
   color: var(--text-color);
   background: rgba(171, 143, 223, 0.34);
   border-radius: 16px;
@@ -88,9 +88,10 @@ a {
 }
 
 .l1 {
-  display: flex;
-  align-items: center;
-  text-align: center;
+  
+  color: var(--text-color);
+
+  margin-top: 24px;
   margin-top: -5rem;
   margin-left: 1rem;
   
