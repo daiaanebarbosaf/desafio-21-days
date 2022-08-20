@@ -71,12 +71,15 @@ a {
 }
 
 .languages {
-  height: 4rem;
-  width: 4rem;
+  height: 3rem;
+  width: 5rem;
+
+  padding-top: 2rem;
   -webkit-transform: rotate(-4deg);
 
   text-align: center;
   color: var(--text-color);
+  
   background: rgba(171, 143, 223, 0.34);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -88,22 +91,17 @@ a {
 }
 
 .l1 {
-  
-  color: var(--text-color);
-
-  margin-top: 24px;
   margin-top: -5rem;
   margin-left: 1rem;
-  
 }
 
 .l2 {
-  margin-top: -5.2rem;
+  margin-top: -5rem;
   margin-left: 7rem;
 }
 
 .l3 {
-  margin-top: -5.2rem;
+  margin-top: -5rem;
   margin-left: 13rem;
 }
 
