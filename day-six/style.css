@@ -77,7 +77,9 @@ a {
   padding-top: 2rem;
   -webkit-transform: rotate(-4deg);
 
+  font-family: 'Roboto Mono', monospace;
   text-align: center;
+  font-weight: 900;
   color: var(--text-color);
   
   background: rgba(171, 143, 223, 0.34);
