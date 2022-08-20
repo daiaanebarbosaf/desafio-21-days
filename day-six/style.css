@@ -49,10 +49,12 @@ a {
   text-decoration: none;
 }
 
-div {
+.container {
   /*border: solid 1px rebeccapurple;*/
 
   padding: 1rem;
+
+  /*-webkit-transform: rotate(-5deg);*/
 
   background: rgba(130, 15, 147, 0.12);
   border-radius: 16px;
