@@ -21,29 +21,30 @@ button {
   height: 3rem;
   width: 5rem;
 
-  padding-top: 1rem;
-
   font-family: 'Roboto Mono', monospace;
-  text-align: center;
+
   font-weight: 900;
   
   
   border: 1px solid rgba(171, 143, 223, 0.93);
-  border-radius: 16px;
+  background: rgba(171, 143, 223, 0.93);
+  border-radius: 15px;
 }
 
-label {
-    font-size: 2rem;
+.label {
+    font-size: 10rem;
     color: var(--text-color);
     margin-top: 24px;
-  
-    
+    margin-bottom: 2rem;
+
+    border-radius: 55px;
+    border: 1px solid rgba(171, 143, 223, 0.93);
     background: rgba(171, 143, 223, 0.34);
     
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(1.6px);
     -webkit-backdrop-filter: blur(1.6px);
-    border: 1px solid rgba(171, 143, 223, 0.93);
+    border: 10px solid rgba(171, 143, 223, 0.93);
   
     
 }
