@@ -10,8 +10,8 @@
 <body class="purple">
   <div class="container">
     <div class="label" id="#label">0</div>
-    <div class="border">
-      <div id="#progress" class="progress"></div>
+      <div class="border">
+        <div id="#progress" class="progress"></div>
     </div>
     <div class="buttons-group">
       <button class="button" id="#resume">Iniciar</button>
@@ -66,8 +66,6 @@
       pauseBtn.classList.add("disabled");
       resumeBtn.classList.remove("disabled");
       resetBtn.classList.add("disabled");
-
-      // https://css-tricks.com/restart-css-animation/
       progress.classList.remove("animate");
       void progress.offsetWidth;
       progress.classList.add("animate");
