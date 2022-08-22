@@ -1,0 +1,49 @@
+body.purple {
+  --bg-color: #fff0f6;
+  --text-color: #00082F;
+  --primary-color: #5B4B8A;
+  --primary-color-dark: #4C3575;
+}
+
+body {
+  background:var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  text-align: center;
+  width: 300px;
+  margin: 60px auto;
+}
+
+button {
+  height: 3rem;
+  width: 5rem;
+
+  padding-top: 1rem;
+
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+  font-weight: 900;
+  
+  
+  border: 1px solid rgba(171, 143, 223, 0.93);
+  border-radius: 16px;
+}
+
+label {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-top: 24px;
+  
+    
+    background: rgba(171, 143, 223, 0.34);
+    
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.6px);
+    -webkit-backdrop-filter: blur(1.6px);
+    border: 1px solid rgba(171, 143, 223, 0.93);
+  
+    
+}
