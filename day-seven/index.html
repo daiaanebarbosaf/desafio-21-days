@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css"/>
+</head>
+
+<body class="purple">
+  <div class="container">
+    <div class="label" id="#label">0</div>
+    <div class="border">
+      <div id="#progress" class="progress"></div>
+    </div>
+    <div class="buttons-group">
+      <button class="button" id="#resume">Iniciar</button>
+      <button class="button disabled" id="#pause">Pausar</button>
+    </div>
+  </div>
+
+  <script>
+
+  (function () {
+    var delay = 1000;
+
+    var label = document.getElementById("#label");
+    var value = parseInt(label.textContent);
+
+    var progress = document.getElementById("#progress");
+
+    var resumeBtn = document.getElementById("#resume");
+    var pauseBtn = document.getElementById("#pause");
+    var resetBtn = document.getElementById("#reset");
+
+    var t = new timer(function () {
+      label.textContent = ++value;
+    }, delay);
+
+    progress.style.animationDuration = delay + "ms";
+
+    resumeBtn.addEventListener("click", function () {
+      t.resume();
+
+      pauseBtn.classList.remove("disabled");
+      resumeBtn.classList.add("disabled");
+      resetBtn.classList.add("disabled");
+
+      progress.classList.add("animate");
+      progress.classList.remove("pause");
+    });
+
+    pauseBtn.addEventListener("click", function () {
+      t.pause();
+
+      pauseBtn.classList.add("disabled");
+      resumeBtn.classList.remove("disabled");
+      resetBtn.classList.remove("disabled");
+
+      progress.classList.add("pause");
+    });
+
+    resetBtn.addEventListener("click", function () {
+      t.reset();
+
+      pauseBtn.classList.add("disabled");
+      resumeBtn.classList.remove("disabled");
+      resetBtn.classList.add("disabled");
+
+      // https://css-tricks.com/restart-css-animation/
+      progress.classList.remove("animate");
+      void progress.offsetWidth;
+      progress.classList.add("animate");
+    });
+  })();
+
+  function timer(callback, delay) {
+    var timerId;
+    var start;
+    var remaining = delay;
+
+    this.pause = function () {
+      window.clearTimeout(timerId);
+      remaining -= new Date() - start;
+    };
+
+    var resume = function () {
+      start = new Date();
+      timerId = window.setTimeout(function () {
+        remaining = delay;
+        resume();
+        callback();
+      }, remaining);
+    };
+    this.resume = resume;
+
+    this.reset = function () {
+      remaining = delay;
+    };
+
+  }
+
+  </script>
+
+</body>
+</html>
