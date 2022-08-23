@@ -7,7 +7,7 @@
 html {
   --ul-color: #fff0f6;
   
-  --primary-color: #5B4B8A;
+  --primary-color: #b1a6d3;
  
   
   --bg: #fff0f6;
@@ -53,7 +53,7 @@ img.avatar {
 }
 
 img.avatar:hover {
-  border: var(--bg-panel) solid 4px;
+  border: var(--primary-color) solid 4px;
 }
 
 h1 {
@@ -93,7 +93,7 @@ ul li a {
 }
 
 ul li a:hover {
-  background: var(--bg-panel);
+  background: var(--primary-color);
 }
 
 /*---------------------------------*/
@@ -153,7 +153,7 @@ label:active:after {
 footer {
   font-weight: 500;
   font-size: 12px;
-  color: var(--text-color);
+  color: var(--color-headings);
   opacity: 0.6;
   transition: opacity 400ms;
 }
@@ -163,5 +163,5 @@ footer:hover {
 }
 
 footer a {
-  color: var(--text-color);
+  color: var(--color-headings);
 }
