@@ -6,25 +6,18 @@
 
 html {
   --bg-color: #fff0f6;
-  --text-color: #00082F;
-  --primary-color: #4263EB;
-  --primary-color-dark: #364fc7;
-  --light: #d8dbe0;
-  --dark: #28292c;
-  --link: rgb(27, 129, 112);
-  --link-hover: rgb(24, 94, 82);
-  --bg: #FCFCFC;
-  --bg-panel: #EBEBEB;
-  --color-headings: #0077FF;
-  --color-text: #333333;
-}
-
-body {
-  background-color: var(--bg);
+  
+  --primary-color: #5B4B8A;
+ 
+  
+  --bg: #fff0f6;
+  --bg-panel: #5B4B8A;
+  --color-headings: #4C3575;
+  --color-text: #00082F;
 }
 
 .container {
-  background-color: var(--bg-panel);
+  background-color: var(--bg);
 }
 
 a {
@@ -117,21 +110,25 @@ ul li a:hover {
 
 /*---------------------------------*/
 
+.toggle {
+  margin-top: 2rem;
+  margin-right: 8rem;
+}
+
 input[type=checkbox]{
   height: 0;
   width: 0;
-  margin: 0;
+
   visibility: hidden;
 }
 
 label {
-
-  margin: 0;
+  margin: auto;
   cursor: pointer;
   text-indent: -9999px;
   width: 52px;
   height: 27px;
-  background: grey;
+  background: var(--color-headings);
   float: right;
   border-radius: 100px;
   position: relative;
@@ -159,7 +156,7 @@ input:checked + label::after {
 }
 
 label:active:after {
-  width: 45px;
+  width: 25px;
 }
 
 /*---------------------------------*/
