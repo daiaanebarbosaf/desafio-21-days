@@ -5,7 +5,7 @@
 }
 
 html {
-  --bg-color: #fff0f6;
+  --ul-color: #fff0f6;
   
   --primary-color: #5B4B8A;
  
@@ -60,13 +60,13 @@ img.avatar {
   width: 100px;
   height: 100px;
   padding: 3.7px;
-  border: var(--primary-color) solid 4px;
+  border: var(--color-headings) solid 4px;
 
   transition: background 400ms;
 }
 
 img.avatar:hover {
-  border: var(--primary-color-dark) solid 4px;
+  border: var(--bg-panel) solid 4px;
 }
 
 h1 {
@@ -93,8 +93,8 @@ ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--primary-color);
-  color:var(--bg-color);
+  background: var(--color-headings);
+  color:var(--bg);
   text-transform: uppercase;
   font-size: 14px;
 
@@ -105,7 +105,7 @@ ul li a {
 }
 
 ul li a:hover {
-  background: var(--primary-color-dark);
+  background: var(--bg-panel);
 }
 
 /*---------------------------------*/
