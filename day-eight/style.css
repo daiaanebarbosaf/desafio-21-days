@@ -12,7 +12,7 @@ html {
   
   --bg: #fff0f6;
   --bg-panel: #5B4B8A;
-  --color-headings: #4C3575;
+  --color-headings: #bf40bf;
   --color-text: #00082F;
 }
 
@@ -24,17 +24,6 @@ a {
   text-decoration: none;
 }
 
-body.dark {
-  --bg-color: #00082F;
-  --text-color:#EDF2FF;
-}
-
-body.pink {
-  --bg-color: #fff0f6;
-  --text-color: #1F000B;
-  --primary-color: #D6336C;
-  --primary-color-dark: #a61e4d;
-}
 
 body.purple {
   --bg-color: #fff0f6;
@@ -141,7 +130,7 @@ label::after{
   left: 3px;
   width: 20px;
   height: 20px;
-  background-color: white;
+  background-color: #e1d6f0ee;
   border-radius: 90px;
   transition: 0.3s;
 }
