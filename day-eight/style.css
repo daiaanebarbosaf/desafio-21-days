@@ -33,8 +33,6 @@ body.purple {
 }
 
 body {
-  background:var(--bg-color);
-  color: var(--text-color);
   font-family: 'Roboto', sans-serif;
 }
 .container {
@@ -60,7 +58,7 @@ img.avatar:hover {
 
 h1 {
   font-size: 32px;
-  color: var(--text-color);
+  color: var(--color-headings);
   margin-top: 24px;
   margin-bottom: 8px;
 }
@@ -70,6 +68,7 @@ h1 {
   font-weight: 400;
   opacity: 0.8;
   font-size: 18px;
+  color: var(--color-headings);
 }
 
 ul {
