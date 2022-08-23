@@ -12,15 +12,13 @@ const initialColors = {
     bgPanel: getStyle(html, "--bg-panel"),
     colorHeadings: getStyle(html, "--color-headings"),
     colorText: getStyle(html, "--color-text"),
-    ul: getStyle(html, "--ul-color"),
 }
 
 const darkMode = {
-    bg: "#e0bcdd",
-    bgPanel: "#4C3575",
-    colorHeadings: "#4C3575",
-    colorText: "#4C3575",
-    ul:"fff0f6"
+    bg: "#bf40bf",
+    bgPanel: "#bf40bf",
+    colorHeadings: "#fff0f6",
+    colorText: "#fff0f6",
 }
 
 const transformKey = key => 
