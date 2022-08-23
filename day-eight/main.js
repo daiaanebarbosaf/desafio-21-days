@@ -8,17 +8,17 @@ const getStyle = (element, style) =>
 
 
 const initialColors = {
-    bg: getStyle(html, "--bg-color"),
+    bg: getStyle(html, "--bg"),
     bgPanel: getStyle(html, "--bg-panel"),
     colorHeadings: getStyle(html, "--color-headings"),
-    colorText: getStyle(html, "--text-color"),
+    colorText: getStyle(html, "--color-text"),
 }
 
 const darkMode = {
-    bg: "#fff0f6",
-    bgPanel: "#00082F",
-    colorHeadings: "#5B4B8A",
-    colorText: "#4C3575"
+    bg: "#333333",
+    bgPanel: "#add8e6",
+    colorHeadings: "#3664FF",
+    colorText: "#B5B5B5"
 }
 
 const transformKey = key => 
