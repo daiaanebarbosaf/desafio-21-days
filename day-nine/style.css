@@ -1,12 +1,23 @@
 :root{
   --bg-color: #fff0f6;
   --text-color: #00082F;
-  --primary-color: #5B4B8A;
+  --primary-color: #bf40bf;
   --primary-color-dark: #4C3575;
 }
 
 body {
   background-color: var(--bg-color);
+  font-family: 'Roboto', sans-serif;
+}
+
+section {
+ margin-top: 15rem;
+ margin-left: 45%;
+}
+
+h1 {
+  color: var(--text-color);
+  padding: auto;
 }
 
 .lds-default {
