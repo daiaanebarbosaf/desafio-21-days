@@ -5,42 +5,22 @@
 }
 
 html {
-  --bg-color: #EDF2FF;
-  --text-color: #00082F;
-  --primary-color: #4263EB;
-  --primary-color-dark: #364fc7;
-  --light: #d8dbe0;
-  --dark: #28292c;
-  --link: rgb(27, 129, 112);
-  --link-hover: rgb(24, 94, 82);
+  --primary-color: #b1a6d3;
+  --bg: #fff0f6;
+  --bg-panel: #5B4B8A;
+  --color-headings: #bf40bf;
+  --color-text: #00082F;
+}
+
+.container {
+  background-color: var(--bg);
 }
 
 a {
   text-decoration: none;
 }
 
-body.dark {
-  --bg-color: #00082F;
-  --text-color:#EDF2FF;
-}
-
-body.pink {
-  --bg-color: #fff0f6;
-  --text-color: #1F000B;
-  --primary-color: #D6336C;
-  --primary-color-dark: #a61e4d;
-}
-
-body.purple {
-  --bg-color: #fff0f6;
-  --text-color: #00082F;
-  --primary-color: #5B4B8A;
-  --primary-color-dark: #4C3575;
-}
-
 body {
-  background:var(--bg-color);
-  color: var(--text-color);
   font-family: 'Roboto', sans-serif;
 }
 .container {
@@ -55,18 +35,18 @@ img.avatar {
   width: 100px;
   height: 100px;
   padding: 3.7px;
-  border: var(--primary-color) solid 4px;
+  border: var(--color-headings) solid 4px;
 
   transition: background 400ms;
 }
 
 img.avatar:hover {
-  border: var(--primary-color-dark) solid 4px;
+  border: var(--primary-color) solid 4px;
 }
 
 h1 {
   font-size: 32px;
-  color: var(--text-color);
+  color: var(--color-headings);
   margin-top: 24px;
   margin-bottom: 8px;
 }
@@ -76,6 +56,7 @@ h1 {
   font-weight: 400;
   opacity: 0.8;
   font-size: 18px;
+  color: var(--color-headings);
 }
 
 ul {
@@ -88,8 +69,8 @@ ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--primary-color);
-  color:var(--bg-color);
+  background: var(--color-headings);
+  color:var(--bg);
   text-transform: uppercase;
   font-size: 14px;
 
@@ -100,26 +81,30 @@ ul li a {
 }
 
 ul li a:hover {
-  background: var(--primary-color-dark);
+  background: var(--primary-color);
 }
 
 /*---------------------------------*/
 
+.toggle {
+  margin-top: 2rem;
+  margin-right: 8rem;
+}
+
 input[type=checkbox]{
   height: 0;
   width: 0;
-  margin: 0;
+
   visibility: hidden;
 }
 
 label {
-
-  margin: 0;
+  margin: auto;
   cursor: pointer;
   text-indent: -9999px;
   width: 52px;
   height: 27px;
-  background: grey;
+  background: var(--color-headings);
   float: right;
   border-radius: 100px;
   position: relative;
@@ -132,7 +117,7 @@ label::after{
   left: 3px;
   width: 20px;
   height: 20px;
-  background-color: white;
+  background-color: #e1d6f0ee;
   border-radius: 90px;
   transition: 0.3s;
 }
@@ -147,7 +132,7 @@ input:checked + label::after {
 }
 
 label:active:after {
-  width: 45px;
+  width: 25px;
 }
 
 /*---------------------------------*/
@@ -156,7 +141,7 @@ label:active:after {
 footer {
   font-weight: 500;
   font-size: 12px;
-  color: var(--text-color);
+  color: var(--color-headings);
   opacity: 0.6;
   transition: opacity 400ms;
 }
@@ -166,5 +151,5 @@ footer:hover {
 }
 
 footer a {
-  color: var(--text-color);
+  color: var(--color-headings);
 }
