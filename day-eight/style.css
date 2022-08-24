@@ -5,11 +5,7 @@
 }
 
 html {
-  --ul-color: #fff0f6;
-  
   --primary-color: #b1a6d3;
- 
-  
   --bg: #fff0f6;
   --bg-panel: #5B4B8A;
   --color-headings: #bf40bf;
@@ -22,14 +18,6 @@ html {
 
 a {
   text-decoration: none;
-}
-
-
-body.purple {
-  --bg-color: #fff0f6;
-  --text-color: #00082F;
-  --primary-color: #5B4B8A;
-  --primary-color-dark: #4C3575;
 }
 
 body {
