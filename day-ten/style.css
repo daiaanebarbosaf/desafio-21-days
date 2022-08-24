@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --primary-color: #b1a6d3;
+  --bg: #fff0f6;
+  --bg-panel: #5B4B8A;
+  --color-headings: #bf40bf;
+  --color-text: #00082F;
+}
+
+.container {
+  background-color: var(--bg);
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.container {
+  text-align: center;
+  width: 300px;
+  margin: 60px auto;
+}
+
+img.avatar {
+  width: 100%;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 3.7px;
+  border: var(--color-headings) solid 4px;
+
+  transition: background 400ms;
+}
+
+img.avatar:hover {
+  border: var(--primary-color) solid 4px;
+}
+
+h1 {
+  font-size: 32px;
+  color: var(--color-headings);
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.username {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  opacity: 0.8;
+  font-size: 18px;
+  color: var(--color-headings);
+}
+
+ul {
+  list-style: none;
+  margin: 48px 0;
+}
+
+ul li a {
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-headings);
+  color:var(--bg);
+  text-transform: uppercase;
+  font-size: 14px;
+
+  margin-bottom: 16px;
+  border-radius: 6px;
+
+  transition: background 400ms;
+}
+
+ul li a:hover {
+  background: var(--primary-color);
+}
+
+/*---------------------------------*/
+
+.toggle {
+  margin-top: 2rem;
+  margin-right: 8rem;
+}
+
+input[type=checkbox]{
+  height: 0;
+  width: 0;
+
+  visibility: hidden;
+}
+
+label {
+  margin: auto;
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 52px;
+  height: 27px;
+  background: var(--color-headings);
+  float: right;
+  border-radius: 100px;
+  position: relative;
+}
+
+label::after{
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  background-color: #e1d6f0ee;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+input:checked + label {
+  background-color: var(--color-headings);
+}
+
+input:checked + label::after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 25px;
+}
+
+/*---------------------------------*/
+
+
+footer {
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--color-headings);
+  opacity: 0.6;
+  transition: opacity 400ms;
+}
+
+footer:hover {
+  opacity: 1;
+}
+
+footer a {
+  color: var(--color-headings);
+}
