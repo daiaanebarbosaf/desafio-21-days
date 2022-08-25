@@ -24,18 +24,20 @@ body {
   font-family: 'Roboto', sans-serif;
   margin:0;
   min-height: 100vh;
+  min-width: 100vh;
 }
 .container {
   text-align: center;
-  width: 300px;
-  margin: 60px auto;
+  width: 100%;
+  margin: auto;
 }
 
 img.avatar {
   width: 100%;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 8rem;
+  height: 8rem;
+  margin-top: 4rem;
   padding: 3.7px;
   border: var(--color-headings) solid 4px;
 
@@ -63,11 +65,13 @@ h1 {
 
 ul {
   list-style: none;
-  margin: 48px 0;
+
 }
 
 ul li a {
-  height: 53px;
+  height: 4rem;
+  width: 18rem;
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,7 +80,8 @@ ul li a {
   text-transform: uppercase;
   font-size: 14px;
 
-  margin-bottom: 16px;
+  margin-left: 33rem;
+  margin-bottom: 1rem;
   border-radius: 6px;
 
   transition: background 400ms;
@@ -90,7 +95,8 @@ ul li a:hover {
 
 .toggle {
   margin-top: 2rem;
-  margin-right: 8rem;
+  margin-right: 41rem;
+  margin-bottom: 2rem;
 }
 
 input[type=checkbox]{
@@ -162,6 +168,7 @@ footer {
   color: var(--color-headings);
   opacity: 0.6;
   transition: opacity 400ms;
+  height: 10rem;
 }
 
 footer:hover {
