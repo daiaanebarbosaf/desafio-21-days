@@ -5,73 +5,31 @@
 }
 
 :root {
-  --bg: #fff0f6;
-  --primary-color: #36D6AD;
-  --segundary-color: #3772FF;
-  --text-primary-color: #FFFFFF;
+  --bg: #EDF2FF;
   --segundary-text-color: #737380;
-  --third-text-color: #BCBCBC;
-  --color-button-pag-inicial: #FC7071;
-  --color-button-hover: #FF9D9E;
+  --color-primary: #8851bd;
+  --color-button-hover: #a066c7;
   --color-fund-input: #F6F6F6;
-  --color-creme: #FCF0E3;
-  --primary-color-background: #E5E5E5;
 
   --font-principal:'Poppins', sans-serif;
   --font-secundaria: 'IBM Plex Sans', sans-serif;
 }
 
 body {
-  min-height: 100vh;
   background-color: var(--bg);
 }
-
-.body-pag-login {
-  background-color: var(--text-primary-color);
-}
-
-/*======CONFIGURAÇÕES MENU DE HOME E MENSAGEM DO HEADER====*/
-
-.menu-header {
-  display: flex;
-  margin-top: 48px;
-
-}
-.home,
-.mensagens {
-  padding-left: 58.61px;
-}
-
-/*=======CONFIGURAÇÃO LOGO=======*/
-.logo-pag-login {
-  display: flex;
-  padding-top: 86.99px;
-  padding-bottom: 24px;
-  justify-content: center;
-  
-}
-
-/*=======CONFIGURAÇÃO CONTEUDO DA PÁGINA=======*/
-
 .conteudo {
-  height: 120vh;
-  width: 70%;
   margin: 0 auto;
-  flex-grow: 1;
 }
 
 /*=======CONFIGURAÇÃO DOS TEXTOS DA PÁGINA DE CADASTRO=======*/
 
-.paragrafo-pag-login {
+h1 {
   text-align: center;
-  color: var(--segundary-color);
-  margin-left: 24px;
-  margin-right: 24px;
-  font-size: 16px;
+  color: var(--color-primary);
+  margin-top: 4rem;
+
   font-family: var(--font-principal);
-  font-style: normal;
-  font-weight: 400;
-  line-height: 21px;
 }
 
 /*=======CONFIGURAÇÃO DOS FORMS PÁGINA CADASTRO=======*/
@@ -148,8 +106,8 @@ body {
   margin-right: auto; 
   margin-bottom: 105px;
   border-radius: 6px;
-  color: var(--text-primary-color);
-  background: var(--color-button-pag-inicial);
+  color: var(--color-fund-input);
+  background: var(--color-primary);
   border-style: none;
   display: block;
 }
@@ -169,20 +127,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 8px;
-  color: var(--color-button-pag-inicial);
+  color: var(--color-primary);
 
-}
-/*=======CONFIGURAÇÃO FOOTER=======*/
-footer {
-  text-align: center;
-  padding-top: 41px;
-  padding-bottom: 41px;
-  color: var(--text-primary-color);
-  background: var(--primary-color);
-  font-family: var(--font-principal);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
 }
 
