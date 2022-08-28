@@ -1,7 +1,7 @@
 :root {
   --bg-color: #fff0f6;
   --text-color: #00082F;
-  --primary-color: #5B4B8A;
+  --primary-color: #a393d1;
   --primary-color-dark: #4C3575;
 }
 
@@ -12,7 +12,7 @@ body{
 }
 
 .panel{
-
+  margin-top: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -86,13 +86,18 @@ body{
 }
 .evaluate {
   color: var(--bg-color);
-  background-color: var(--primary-color);
+  background-color: var(--primary-color-dark);
 }
 
 .evaluate:hover {
-  background-color: #5B4B8A;
+  background-color: var(--primary-color);
 }
+
 .next {
   color: var(--bg-color);
   background-color: var(--primary-color-dark);
+}
+
+.next:hover {
+  background-color: var(--primary-color);
 }
