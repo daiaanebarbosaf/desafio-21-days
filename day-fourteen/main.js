@@ -107,7 +107,7 @@ evaluate[0].addEventListener("click", () => {
       result[0].style.color = "#4C3575";
   } else {
       result[0].innerHTML = "Não foi desta vez!";
-      result[0].style.color = "red";
+      result[0].style.color = "#a393d1";
   }
 })
 }
