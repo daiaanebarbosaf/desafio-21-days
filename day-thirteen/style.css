@@ -1,9 +1,9 @@
-/*======Configuração Geral============*/
+
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;/*conte a partir da caixa*/
-}/*seletor universal*/
+  box-sizing: border-box;
+}
 
 :root {
 
@@ -37,6 +37,10 @@ body{
   width: min(50rem, 100%);
   margin-inline: auto;
   padding-inline: 2.4rem;
+}
+
+a {
+  text-decoration: none;
 }
 
 ul {
@@ -74,18 +78,14 @@ ul {
 }
 
 .social-links {
-  display: flex;/*os elementos ficarão um ao lado do outro*/
-  align-items: center;/*centralizando alinhamento os itens*/
-  justify-content: center;/*colocando no centro da página*/
-  gap: 3.2rem;/*espaçamento entre elementos*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
 }
 
-/*custum colors*/
-#services .card circle {
-  fill: var(--brand-light);
-}
 
-/*mudando a cor da palavra Care na logo da página inicial*/
+
 #navigation .logo path[fill*="#00856F"],
 #backToTopButton circle {
   fill: var(--primary-color);
@@ -95,17 +95,6 @@ button.open-menu path[stroke*="#00856F"],
 #contact li path {
   stroke: var(--primary-color);
 }
-
-body.menu-expanded #navigation .logo path,
-#navigation.scroll .logo path {
-  fill: white;
-}
-
-#navigation.scroll button.open-menu path[stroke*="#00856F"]{
-  stroke: white;
-}
-
-/*============CONGIGURAÇÕES DE NAVEGAÇÃO============*/
 
 nav {
   display: flex;
@@ -126,7 +115,7 @@ nav .wrapper{
 }
 
 nav.scroll {
-  background: var(--primary-color);
+  background: var(--bg-color);
 }
 
 nav button {
@@ -250,6 +239,8 @@ img.avatar {
   border-radius: 50%;
   width: 100px;
   height: 100px;
+
+  margin-top: 2rem;
   padding: 3.7px;
   border: var(--primary-color) solid 4px;
 
@@ -281,7 +272,9 @@ h1 {
       overflow: auto;
   }
 
-  /*Essa linha diz que tudo que está dentro da página vai crescer 100% até chegar aos 1121px que é igual a 122rem*/
+  #nav {
+    color: var(--primary-color);
+  }
   .wrapper {
       width: min(122rem, 100%);
       display: grid;
@@ -303,11 +296,6 @@ h1 {
       font-size: 4rem;
       line-height: 5.2rem;
   }
-
-  /*===CONGIGURAÇÕES DE NAVIGATION===*/
-
-  /*===CONGIGURAÇÕES DO RESET===*/
-  /*Serão resetadas todas as configurações para que possa mexer no menu*/
   nav#navigation .wrapper * { /*o asterisco siginifica pegar todos*/
       margin: 0;
       padding: 0;
@@ -328,7 +316,6 @@ h1 {
       
   }
 
-  /*nesse trecho os botoes de clicar nas redes sociais, abrir e fechar menu estão sendo excluídos*/
   nav#navigation .close-menu,
   nav#navigation .close-menu,
   nav#navigation .open-menu,
