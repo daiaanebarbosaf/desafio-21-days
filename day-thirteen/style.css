@@ -41,6 +41,12 @@ body{
 
 a {
   text-decoration: none;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+a:hover{
+  color: var( --primary-color-dark);
 }
 
 ul {
@@ -115,7 +121,7 @@ nav .wrapper{
 }
 
 nav.scroll {
-  background: var(--bg-color);
+  background: var(--b);
 }
 
 nav button {
@@ -305,9 +311,8 @@ h1 {
       flex-direction: initial;
       position: initial;
       font-size: initial;
-      font-weight: initial;
+   
       transform: initial;
-      color: initial;
       background-color: initial;
       filter: initial;
       text-transform: initial;
