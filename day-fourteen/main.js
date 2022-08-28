@@ -2,7 +2,7 @@
 const Questions = [{
   id: 0,
   q: "Qual é o desafio de hoje?",
-  a: [{ text: "Formulario", isCorrect: false },
+  a: [{ text: "Forms", isCorrect: false },
       { text: "Toogle", isCorrect: false },
       { text: "Quiz", isCorrect: true },
       { text: "Galeria", isCorrect: false }
