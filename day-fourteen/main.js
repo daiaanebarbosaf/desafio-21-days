@@ -11,24 +11,15 @@ const Questions = [{
 },
 {
   id: 1,
-  q: "What is the capital of Thailand?",
-  a: [{ text: "Lampang", isCorrect: false, isSelected: false },
-      { text: "phuket", isCorrect: false },
-      { text: "Ayutthaya", isCorrect: false },
-      { text: "Bangkok", isCorrect: true }
+  q: "Qual a melhor live no horário do almoço?",
+  a: [{ text: "Livelunch", isCorrect: false, isSelected: false },
+      { text: "Comelive", isCorrect: false },
+      { text: "Fomezero", isCorrect: false },
+      { text: "Marmitech", isCorrect: true }
   ]
 
 },
-{
-  id: 2,
-  q: "What is the capital of Gujarat",
-  a: [{ text: "surat", isCorrect: false },
-      { text: "vadodara", isCorrect: false },
-      { text: "gandhinagar", isCorrect: true },
-      { text: "rajkot", isCorrect: false }
-  ]
 
-}
 
 ]
 
@@ -73,35 +64,35 @@ var selected = "";
 // Show selection for op1
 op1.addEventListener("click", () => {
   op1.style.backgroundColor = "lightgoldenrodyellow";
-  op2.style.backgroundColor = "lightskyblue";
-  op3.style.backgroundColor = "lightskyblue";
-  op4.style.backgroundColor = "lightskyblue";
+  op2.style.backgroundColor = "#a393d1";
+  op3.style.backgroundColor = "#a393d1";
+  op4.style.backgroundColor = "#a393d1";
   selected = op1.value;
 })
 
 // Show selection for op2
 op2.addEventListener("click", () => {
-  op1.style.backgroundColor = "lightskyblue";
+  op1.style.backgroundColor = "#a393d1";
   op2.style.backgroundColor = "lightgoldenrodyellow";
-  op3.style.backgroundColor = "lightskyblue";
-  op4.style.backgroundColor = "lightskyblue";
+  op3.style.backgroundColor = "#a393d1";
+  op4.style.backgroundColor = "#a393d1";
   selected = op2.value;
 })
 
 // Show selection for op3
 op3.addEventListener("click", () => {
-  op1.style.backgroundColor = "lightskyblue";
-  op2.style.backgroundColor = "lightskyblue";
+  op1.style.backgroundColor = "#a393d1";
+  op2.style.backgroundColor = "#a393d1";
   op3.style.backgroundColor = "lightgoldenrodyellow";
-  op4.style.backgroundColor = "lightskyblue";
+  op4.style.backgroundColor = "#a393d1";
   selected = op3.value;
 })
 
 // Show selection for op4
 op4.addEventListener("click", () => {
-  op1.style.backgroundColor = "lightskyblue";
-  op2.style.backgroundColor = "lightskyblue";
-  op3.style.backgroundColor = "lightskyblue";
+  op1.style.backgroundColor = "#a393d1";
+  op2.style.backgroundColor = "#a393d1";
+  op3.style.backgroundColor = "#a393d1";
   op4.style.backgroundColor = "lightgoldenrodyellow";
   selected = op4.value;
 })
@@ -113,7 +104,7 @@ const evaluate = document.getElementsByClassName("evaluate");
 evaluate[0].addEventListener("click", () => {
   if (selected == "true") {
       result[0].innerHTML = "Acertou!";
-      result[0].style.color = "green";
+      result[0].style.color = "#4C3575";
   } else {
       result[0].innerHTML = "Não foi desta vez!";
       result[0].style.color = "red";
