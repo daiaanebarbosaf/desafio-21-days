@@ -13,146 +13,101 @@
 
 body {
   min-height: 100vh;
-  background: var(--bg-color);
-  
+
   font-family: 'Roboto', sans-serif;
+
+  background-color: var(--bg-color);
 }
 
 /*=======CONFIGURAÇÃO CONTEUDO=======*/
 
 .conteudo {
   min-height: 100vh;
-  margin: 0 auto;
+  text-align: center;
+  
 }
+
 
 h1 {
-  font-size: 32px;
   color: var(--text-color);
-  margin-top: 24px;
-  margin-bottom: 8px;
-}
-
-.paragrafo-pag-galeria-pets {
-  display: flex;
-  text-align: center;
-
   margin-top: 2rem;
   margin-bottom: 2rem;
 
-  padding-left: 3rem;
-
-  color: var( --primary-color);
-  margin-top: -13rem;
-  font-size: 1rem;
-  font-family: var(--font-principal);
-  font-style: normal;
-  font-weight: 400;
+  text-align: center;
 }
 
-ul {
-  list-style: none;
+posts {
+  gap: 22rem;
 }
 
-.itens-lista {
-  margin-left: -4rem;
+img,
+video {
+  height: 11rem;
+  
 }
 
-.perfil-pet-dunga {
-  background-color: var(--color-fund-input);
+#image,
+#video {
+
   width: 25rem;
-  height: 12rem;
-  display: flex;
-
-  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 
   margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 
-  padding-top: 0.8rem;
-  padding-left: 11.6rem;
-  
+  background: rgba(171, 143, 223, 0.34);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.6px);
+  -webkit-backdrop-filter: blur(1.6px);
+  border: 1px solid rgba(171, 143, 223, 0.93);
 
-  background-image: 
-  url('../assets/dog-dunga.png'),
-  url('../assets/icone-mensagem.png');
-  background-repeat: 
-  no-repeat;
-  background-position: 
-  left 1.2rem center,
-  left 11.6rem bottom 1.2rem;
+  animation: go-back 10s infinite alternate;
 }
 
-.perfil-pet-felicia {
-  background-color: var(--color-fund-input);
-  width: 25rem;
-  height: 12rem;
-
-  display: flex;
-
-  flex-direction: column;
-
-  padding-top: 0.8rem;
-  padding-left: 11.6rem;
-
-  background-image: 
-  url('../assets/cat-felicia.png'),
-  url('../assets/icone-mensagem.png');;
-  background-repeat: 
-  no-repeat;
-  background-position: 
-  left 1.2rem center,
-  left 11.6rem bottom 1.2rem;
+p, 
+a {
+  font-family: 'Roboto Mono', monospace;
 }
 
-.perfil-pet-sirius {
-  background-color: var(--color-fund-input);
-  width: 25rem;
-  height: 12rem;
-  margin-top: 1rem;
-  display: flex;
+p {
+  font-size: 13px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
 
-  flex-direction: column;
-
-  padding-top: 0.8rem;
-  padding-left: 11.6rem;
-
-  background-image: 
-  url('../assets/dog-sirius.png'),
-  url('../assets/icone-mensagem.png');;
-  background-repeat: 
-  no-repeat;
-  background-position: 
-  left 1.2rem center,
-  left 11.6rem bottom 1.2rem;
 }
-
-.nome-pet {
-  font-family: var(--font-principal);
-  color: var(--segundary-color);
-  font-style: normal;
-  font-weight: 600;
-  font-size: 1rem;
-  line-height: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-
-.descricao-pet {
-  font-family: var(--font-principal);
-  color: var(--segundary-text-color);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 0.9rem;
-  line-height: 1.3rem;
-}
-
 
 a {
   text-decoration: none;
-  font-family: var(--font-principal);
   color: var(--segundary-text-color);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 0.6rem;
-  line-height: 1rem;
-  padding-left: 1.5rem;
+  font-weight: bold;
+
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background: rgba(158, 43, 152, 0.34);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.6px);
+  -webkit-backdrop-filter: blur(1.6px);
+  border: 1px solid rgba(171, 143, 223, 0.93);
 }
 
+@keyframes go-back {
+  from {
+    transform: translateX(50px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (min-width: 768px){
+  .posts {
+    display: flex;
+  }
+}
