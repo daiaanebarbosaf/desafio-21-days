@@ -45,28 +45,34 @@
 .populares__card___titulo {
   color: #333333;
   font-size: 1.5rem;
+  /*border: 3px solid blue;*/
+
+  width: 225px;
  
 }
 
-.populares__card___data {
+.populares__card___paragraph {
   color: #808080;
   font-size: .9rem;
+  width: 80px;
+  border: 3px solid blue
+
 }
 
 .populares__card___descricao {
   color: #333333;
   line-height: 1.5;
 
-  margin: 1rem 0;
-  text-align: justify;
+
   font-size: 0.9rem;
 
-  margin-top: 3rem;
+  margin-top: 4rem;
   margin-left: -3rem;
 }
 
 .populares__titulo {
   font-weight: 500;
+  margin-bottom: 1rem;
   
 }
 .populares__icone {
