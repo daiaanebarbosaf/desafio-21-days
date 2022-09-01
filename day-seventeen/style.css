@@ -1,0 +1,16 @@
+:root {
+  --bg-color: #fff0f6;
+  --text-color: #00082F;
+  --primary-color: #a393d1;
+  --primary-color-dark: #4C3575;
+}
+
+body{
+  background: var(--bg-color);
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+#text {
+  background: #00082F;
+}
