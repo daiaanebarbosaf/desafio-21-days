@@ -1,5 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" 
+style="color:#4C3575; 
+font-size: 10rem;
+font-family: 'Roboto', sans-serif;
+text-align: center;
+backdrop-filter: blur(1.6px);
+-webkit-backdrop-filter: blur(1.6px);
+font-weight: 900;
+transform: upercase;">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +15,10 @@
 </head>
 
 <body>
-  <h1></h1>
+  <h1 onclick="mostra()"></h1>
   <script>
     function mostra (conteudo) {
-      document.write(conteudo).style.backgroundColor = "green";
+      document.write(conteudo);
     }
   
     var nome = prompt("Escreva algo:");
