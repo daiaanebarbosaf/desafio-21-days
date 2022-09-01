@@ -6,12 +6,20 @@
   <title>Document</title>
 </head>
 <body>
-  <section>
-    <form action="">
-      <input type="text" id="name" name="name">
-      <input type="submit" value="Enviar">
-    </form>
-  </section>
+  <script>
+    function pulaLinha() {
+      document.write("<br> <br>");
+    }
+    
+    function mostra (conteudo) {
+      document.write(conteudo);
+      pulaLinha();
+    }
+  
+    var nome = prompt("Informe seu nome:");
+    mostra (nome);
+  
+  </script>
 
   <script src="main.js"></script>
 </body>
