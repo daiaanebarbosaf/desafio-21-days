@@ -1,17 +1,9 @@
 const elementoResposta = document.querySelector("#resposta")
 const buttonPerguntar = document.querySelector('#buttonPerguntar')
 
-document.addEventListener("keypress", function(e){
-if(e.key === "Enter"){
-  //console.log("Aperto o enter")
-  const btn = document.querySelector("#buttonPerguntar")
-  btn.click();
-}
-})  
 
-function mostra(conteudo) {
-  document.write(conteudo);
-  pulaLinha();
+function mostra(resposta) {
+  document.write(resposta);
 }
 
 function fazerPergunta(){
