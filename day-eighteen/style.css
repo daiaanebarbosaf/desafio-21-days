@@ -17,6 +17,13 @@ body {
   margin: 60px auto;
 }
 
+p {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  opacity: 0.8;
+  font-size: 18px;
+}
+
 button {
   height: 3rem;
   width: 5rem;
