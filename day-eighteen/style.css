@@ -31,7 +31,7 @@ button {
   border-radius: 15px;
 }
 
-.label {
+p {
     font-size: 10rem;
     color: var(--text-color);
     margin-top: 24px;
