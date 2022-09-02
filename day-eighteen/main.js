@@ -2,8 +2,8 @@ const elementoResposta = document.querySelector("#resposta")
 const buttonPerguntar = document.querySelector('#buttonPerguntar')
 
 
-function mostra(resposta) {
-  document.write(resposta);
+function mostra(conteudo) {
+  document.write(conteudo);
 }
 
 function fazerPergunta(){
@@ -14,7 +14,7 @@ function fazerPergunta(){
 
   }
 
-  resposta = sorteia(1000);
+   resposta = sorteia(1000);
 
   mostra ("Sua nova senha será: @pa$$w" + resposta);
 }
