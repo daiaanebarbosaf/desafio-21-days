@@ -7,46 +7,11 @@
   <title>Day Eighteen - 21 Days Of Code</title>
 </head>
 <body>
-  
+  <h1>Clique no botão</h1>
+  <p>saiba sua nova senha</p>
+
+  <button id="buttonPerguntar" onclick="fazerPergunta()">Clique aqui</button>
+
+  <h3 id="resposta" >
 </body>
 </html>
-<h1>Clique no botão</h1>
-<p>saiba sua nova senha</p>
-
-<button id="buttonPerguntar" onclick="fazerPergunta()">Clique aqui</button>
-
-<h3 id="resposta" >
-
-  <script>
-    const elementoResposta = document.querySelector("#resposta")
-    const buttonPerguntar = document.querySelector('#buttonPerguntar')
-
-    document.addEventListener("keypress", function(e){
-    if(e.key === "Enter"){
-      //console.log("Aperto o enter")
-      const btn = document.querySelector("#buttonPerguntar")
-      btn.click();
-    }
-    })  
-
-    function mostra(conteudo) {
-      document.write(conteudo);
-      pulaLinha();
-	  }
-
-    function fazerPergunta(){
-
-      function sorteia(n) {
-
-        return Math.round(Math.random() * n);
-
-      }
-
-      resposta = sorteia(1000);
-
-      mostra ("Sua nova senha será: @pa$$w" + resposta);
-    }
-
-
-
-  </script>
