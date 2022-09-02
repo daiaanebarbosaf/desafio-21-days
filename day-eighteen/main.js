@@ -6,13 +6,13 @@ function mostra(conteudo) {
   document.write(conteudo);
 }
 
+function sorteia(n) {
+
+  return Math.round(Math.random() * n);
+
+}
+
 function fazerPergunta(){
-
-  function sorteia(n) {
-
-    return Math.round(Math.random() * n);
-
-  }
 
    resposta = sorteia(1000);
 
