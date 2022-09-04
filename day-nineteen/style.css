@@ -21,7 +21,6 @@ body {
   margin-top: 50px;
   width: 80%;
   max-width: 400px;
-
   margin-inline: auto;
 }
 
@@ -53,6 +52,7 @@ input {
 }
 
 button {  
+  margin-left: 8.5rem;
   width: 30%;
   border: none;
   background-color: var(--primary-color-dark);
@@ -63,4 +63,12 @@ button {
 button:hover {
   filter: brightness(1.2);
   cursor: pointer;
+}
+
+#resultado {
+  margin-top: 2rem;
+  width: 30rem;
+  align-items: center;
+  margin-left: -2.5rem;
+
 }
