@@ -10684,6 +10684,7 @@ emojis_raw = [
      ]
   }
 ];
+
 emojis = {};
 
 // Create categories
@@ -10694,18 +10695,17 @@ for (let emoji of emojis_raw) {
   emojis[emoji.category].push(emoji);
 }
 
-// Textarea
+
 let textArea = document.createElement('textarea');
 textArea.setAttribute('id', 'text');
-textArea.setAttribute('placeholder', 'Try some emojis here...');
+textArea.setAttribute('placeholder', 'Selecione os emojis que deseja e copie');
 document.body.appendChild(textArea);
 
-/* Emojis structure */
-// wrapper (ul)
+
 let emojisUl = document.createElement('ul');
 emojisUl.setAttribute('id', 'emojis');
 
-// categories (li)
+
 for (let key in emojis) {
   let category = emojis[key];
   let categoryLi = document.createElement('li');
