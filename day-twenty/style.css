@@ -1,7 +1,21 @@
 
 
+:root {
+  --bg-color: #fff0f6;
+  --text-color: #00082F;
+  --primary-color: #5B4B8A;
+  --primary-color-dark: #4C3575;
+}
+
 * {
   box-sizing: border-box; 
+}
+
+body {
+  background-color: var(--bg-color);
+  color:var(--text-color);
+  text-align: center;
+  font-family: sans-serif;
 }
 
 main {
