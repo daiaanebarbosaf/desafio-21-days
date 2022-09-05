@@ -2,9 +2,6 @@
 
 :root {
   --bg-color: #fff0f6;
-  --text-color: #00082F;
-  --primary-color: #5B4B8A;
-  --primary-color-dark: #4C3575;
 }
 
 * {
@@ -49,7 +46,7 @@ ul {
 
 ul#emojis {
   font-family: sans-serif;
-  border: 1px solid #a9a9a9;
+  border: 1px solid #5B4B8A;
 
   max-height: 400px;
   overflow: auto;
