@@ -1,14 +1,18 @@
+
+
 * {
   box-sizing: border-box; 
 }
 
-main {
+h2.title {
+  position: sticky;
+}
 
-  
+.placeholder {
+  font-style: italic;
 }
 
 ul {
-
   list-style: none;
   padding: 0; 
   margin: 0;
@@ -23,9 +27,9 @@ ul {
 
 
 ul#emojis {
-
   font-family: sans-serif;
   border: 1px solid #a9a9a9;
+
   max-height: 300px;
   overflow: auto;
   margin: 0 auto;
@@ -33,6 +37,8 @@ ul#emojis {
 
 li {
 
+  font-size: 24px;
+  padding: 6px;
   font-size: 24px;
   padding: 6px;
 }
@@ -48,5 +54,4 @@ a {
 
 .list {
   display: flex;
-  flex-direction: row;
 }
