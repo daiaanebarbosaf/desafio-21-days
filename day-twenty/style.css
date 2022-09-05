@@ -2,24 +2,27 @@
   box-sizing: border-box; 
 }
 
+main {
+
+  
+}
+
 ul {
-  display: flex;
-  flex-direction: column;
+
   list-style: none;
   padding: 0; 
   margin: 0;
 }
 
 #text {
-
   width: 100%;
   height: 100px;
   margin: 0 auto 10px;
   resize: none;
 }
 
-ul #emojis {
 
+ul#emojis {
 
   font-family: sans-serif;
   border: 1px solid #a9a9a9;
@@ -29,14 +32,21 @@ ul #emojis {
 }
 
 li {
+
   font-size: 24px;
   padding: 6px;
 }
         
 a {
+
   width: 30px;
   margin: 6px;
   overflow: hidden;
   cursor: pointer;
   text-decoration: none;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
 }
