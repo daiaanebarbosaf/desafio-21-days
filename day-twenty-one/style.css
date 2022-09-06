@@ -274,14 +274,14 @@ h1 {
   gap: 22rem;
 }
 
-.posts img,
-.posts video {
+section img,
+section video {
   height: 11rem;
   
 }
 
-.posts #image,
-.posts #video {
+#image,
+#video {
 
   width: 25rem;
   align-items: center;
@@ -291,31 +291,20 @@ h1 {
   margin-bottom: 1rem;
   margin-left: 1rem;
   margin-right: 1rem;
-
-  background: rgba(171, 143, 223, 0.34);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(1.6px);
-  -webkit-backdrop-filter: blur(1.6px);
-  border: 1px solid rgba(171, 143, 223, 0.93);
-
-  animation: go-back 10s infinite alternate;
 }
 
-.posts p, 
-.posts a {
+section p, 
+section a {
   font-family: 'Roboto Mono', monospace;
 }
 
-.posts p {
+section p {
   font-size: 13px;
   margin: 0 auto;
   margin-bottom: 1rem;
 
 }
-
-
-.posts a {
+section a {
   text-decoration: none;
   color: var(--segundary-text-color);
   font-weight: bold;
